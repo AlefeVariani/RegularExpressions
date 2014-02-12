@@ -1,0 +1,23 @@
+CLASSES DE CARACTERES
+
+=============================================
+
+As classes são grupos, onde vocde determina quais caracteres voce vai permitir
+
+ex:
+
+[02468] 
+
+aqui por exemplo voce vai permitir apenas numeros pares
+
+[AaEeIiOoUu]
+
+apenas Vogais
+
+Existem os intervalos de caracters que são:
+
+[a-z]     de a á z sendo letra minusculas
+[A-Z]     de A á Z sendo letra maiusculas
+[a-zA-Z]  minusculas e maiusculas de a á z
+[0-9] 	  qualquer numero se fosse [1-3] seria permitido 1 2 e 3
+[0-9.-/+] Qualquer número, ponto, subtração, divisão ou soma

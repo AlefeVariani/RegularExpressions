@@ -1,0 +1,21 @@
+
+FUNÇÕES DO PHP PARA EXPRESSÕES REGULARES
+
+==================================================
+
+ereg - Casando expressões regulares
+ereg - Substituição através de expressões regulares
+
+eregi - Casando expressões regulares insensíveis a maiúsculas e minúsculas
+eregi_repplace - Substituição utilizando expressões regulares 
+insensíveis a maiúsculas e minúsculas
+
+split - separa em array utilizando expressões regulares
+
+Existem tambem funções da PCRE (http://www.php.net/manual/pt_BR/ref.pcre.php)
+uma delas são:
+
+preg_match - que serve para verificar se uma determinada string 'casa' 
+com determinada expressão regular
+
+preg_replace - realiza uma pesquisa por uma expressão regular e a substitui

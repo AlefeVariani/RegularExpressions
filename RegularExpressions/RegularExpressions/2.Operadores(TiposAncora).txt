@@ -1,0 +1,33 @@
+OPERADORES (Metacaracteres tipo Âncora)
+
+================================================
+
+^ indica com qual string a expressao deve começar
+
+ex:
+
+^bom 
+
+A string deve começar com bom, ou seja bom dia, 
+bom garoto e não boa noite, esse cara é bom e etc.
+
+
+$ indica com qual string a exepressão deve terminar
+
+ex:
+
+legal$ 
+
+A string deve terminar com legal, ou seja que legal, 
+voce é muito legal e não voce é uma cara legal mesmo, 
+deve sempre terminar com legal 
+
+\b indica qual string deve ter no inicio ou no fim da palavra
+
+ex:
+
+\bA[a-bA-Z]
+
+A string deve comecar ou terminar com A, 
+ou seja numa lista de {Alefe, Rodrigo, MariA, VARIANI, João, VALERIA},
+deverá listar Alefe e VALERIA apenas

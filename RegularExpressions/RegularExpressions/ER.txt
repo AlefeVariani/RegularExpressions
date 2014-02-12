@@ -1,0 +1,160 @@
+
+Expressões regulares define um padrão a ser usado para procurar ou substituir palavras 
+ou grupos de palavaras.
+É um meio preciso de se fazser buscas determinadas porporcoes de texto
+
+Por exemplo se o conjunto de palavras for {casa, asa, jardim, ovos, terra} 
+e a expressao regular busca por um padrão rr, ela obtera palavras carro e terra,
+pois são as únicas palavras que possui rr
+
+É consderado um metodo rapido e simples de manipulação e combinação avancada de strings.
+
+===========================================
+OPERADORES (Metacaracteres tipo Âncora)
+===========================================
+
+^ indica com qual string a expressao deve começar
+
+ex:
+
+^bom 
+
+a string deve começar com bom, ou seja bom dia, bom garoto e não boa noite, esse cara é bom e etc.
+
+$ indica com qual string a excpressão deve terminar
+
+ex:
+
+legal$ 
+
+a string deve terminar com legal, ou seja que legal, voce é muito legal e não voce é uma cara legal mesmo, deve 
+sempre terminar com legal 
+
+\b indica qual string deve ter no inicio ou no fim da palavra
+
+ex:
+
+\bA[a-bA-Z]
+
+a string deve começão ou terminar com A, ou seja numa lista de {Alefe, Rodrigo, MariA, João, VARIANI, VALERIA}, deverá 
+listar Alefe e VALERIA apenas
+
+===========================================
+Representantes (Metacaracteres tipo Representante)
+===========================================
+
+.      ponto, um caractere qualquer
+[...]  lista, lista de caracteres permitidos
+[^...] lista negada, lista de caracteres proibidos
+
+OUTROS
+
+\c  	  escape- Torna literal o caractere c.
+|   	  ou - ou um ou outro
+(...) 	  grupo - delimita um grupo
+\1...\9   retrovisor - texto casado nos grupos 1...9.
+
+===========================================
+CARACTERES
+===========================================
+
+
+\t – Caracter de tabulação
+\n – Nova linha
+\f – Avanço de página
+\r – Retorno de carro
+ 
+\. – Qualquer caractere
+\\ – Uma barra invertida literal
+\- – Um hífen literal
+
+===========================================
+CLASSES DE CARACTERES
+===========================================
+
+as classes são grupos, onde vocde determina quais caracteres voce vai permitir
+ex
+
+[02468] 
+
+aqui por exemplo voce vai permitir apenas numeros pares
+
+[AaEeIiOoUu]
+
+apenas Vogais
+
+Existem os intervalos de caracters que são:
+
+[a-z]  de a á z sendo letra minusculas
+[A-Z]  de A á Z sendo letra maiusculas
+[a-zA-Z] minusculas e maiusculas de a á z
+[0-9] qualquer numero se fosse [1-3] seria permitido 1 2 e 3
+[0-9.-/+] - Qualquer número, ponto, subtração, divisão ou soma
+
+===========================================
+CLASSES DE CARACTERES PRE-DEFINIDAS
+===========================================
+
+[:upper:]	[A-Z]				Letras maiúsculas.
+[:lower:]	[a-z]				Letras minúsculas.
+[:alpha:]	[A-Za-z]			Letras maiúsculas e minúsculas.
+[:alnum:]	[A-Za-z0-9]			Letras e números.
+[:digit:]	[0-9]				Números.
+[:xdigit:]	[0-9A-Fa-f]			Números hexadecimais.
+[:punct:]	[.,!?:...]			Sinais de pontuação.
+[:blank:]	[ \t]				Espaço e TAB.
+[:space:]	[ \t\n\r\f\v]			Caracteres brancos.
+[:cntrl:]	-				Caracteres de controle.
+[:graph:]	[^ \t\n\r\f\v]			Caracteres imprimíveis.
+[:print:]	[^\t\n\r\f\v]			Imprimíveis e o espaço.
+
+===========================================
+Tipos Quantificadores (Ocorrências Múltiplas)
+===========================================
+
+?     - Uma ocorrência ou nenhuma (Equivale a {0,1})
+*     - Nenhuma ocorrência, uma ocorrência, duas ocorrências e por aí vai (Equivale a {0,})
++     - Uma ou mais ocorrências (Equivale a {1,})
+{n,m} - de n até m
+
+===========================================
+Funções do PHP
+===========================================
+
+ereg - Casando expressões regulares
+ereg - Substituição através de expressões regulares
+
+eregi - Casando expressões regulares insensíveis a maiúsculas e minúsculas
+eregi_repplace - Substituição utilizando expressões regulares insensíveis a maiúsculas e minúsculas
+
+split - separa em array utilizando expressões regulares
+
+Existem tambem funções da PCRE (http://www.php.net/manual/pt_BR/ref.pcre.php)
+uma delas são:
+
+preg_match - que serve para verificar se uma determinada string 'casa' com determinada expressão regular
+
+preg_replace - realiza uma pesquisa por uma expressão regular e a substitui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

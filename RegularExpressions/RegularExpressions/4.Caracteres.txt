@@ -1,0 +1,12 @@
+CARACTERES
+
+==============================
+
+\t – Caracter de tabulação
+\n – Nova linha
+\f – Avanço de página
+\r – Retorno de carro
+ 
+\. – Qualquer caractere
+\\ – Uma barra invertida literal
+\- – Um hífen literal

@@ -1,0 +1,17 @@
+
+Representantes (Metacaracteres tipo Representante)
+
+=================================================
+
+.      ponto, um caractere qualquer
+[...]  lista, lista de caracteres permitidos
+[^...] lista negada, lista de caracteres proibidos
+
+
+OUTROS
+
+
+\c  	  escape- Torna literal o caractere c.
+|   	  ou - ou um ou outro
+(...) 	  grupo - delimita um grupo
+\1...\9   retrovisor - texto casado nos grupos 1...9.
