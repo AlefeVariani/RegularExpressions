@@ -2,7 +2,7 @@ OPERADORES (Metacaracteres tipo Âncora)
 
 ================================================
 
-^ indica com qual string a expressão deve começar
+^ indica com qual string a expressao deve começar
 
 ex:
 
@@ -28,6 +28,6 @@ ex:
 
 \bA[a-bA-Z]
 
-A string deve começar ou terminar com A, 
+A string deve comecar ou terminar com A, 
 ou seja numa lista de {Alefe, Rodrigo, MariA, VARIANI, João, VALERIA},
 deverá listar Alefe e VALERIA apenas
