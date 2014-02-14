@@ -2,12 +2,12 @@ ER
 	
 ==================================================
 
-Expressões regulares define um padrão a ser usado para procurar ou substituir palavras 
+Expressï¿½es regulares define um padrï¿½o a ser usado para procurar ou substituir palavras 
 ou grupos de palavras.
-É um meio preciso de se fazer buscas determinadas prporções de texto
+ï¿½ um meio preciso de se fazer buscas determinadas proporï¿½ï¿½es de texto
 
 Por exemplo: se o conjunto de palavras for {casa, asa, jardim, ovos, terra} 
-e a expressão regular busca por um padrão rr, ela obtera palavras carro e terra,
-pois são as únicas palavras que possui rr
+e a expressï¿½o regular busca por um padrï¿½o rr, ela obtera palavras carro e terra,
+pois sï¿½o as ï¿½nicas palavras que possui rr
 
-É considerado um método rápido e simples de manipulação e combinação avançada de strings.
+ï¿½ considerado um mï¿½todo rï¿½pido e simples de manipulaï¿½ï¿½o e combinaï¿½ï¿½o avanï¿½ada de strings.
