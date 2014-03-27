@@ -18,5 +18,5 @@ $stringFim = ereg("abc", $string);
 if ($stringFim) {
 	echo "True";
 } else {
-	echo'False';
+	echo "False";
 }
