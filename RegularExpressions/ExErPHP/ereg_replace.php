@@ -8,7 +8,7 @@
 *
 */
 
-$numero = '10';
+$numero = "10";
 $string = "Entra o camisa dez do Time kkk";
 
 $stringFim = ereg_replace('dez', $numero, $string);
@@ -16,5 +16,5 @@ $stringFim = ereg_replace('dez', $numero, $string);
 if (!$stringFim) {
 	echo $stringFim;
 } else {
-	echo 'Não exite a palavra na frase :-/';
+	echo "Não exite a palavra na frase :-/";
 }
