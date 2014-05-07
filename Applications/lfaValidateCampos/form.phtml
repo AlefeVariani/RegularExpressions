@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script> 
+	<title>LFA</title>
+</head>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#date").mask("99/99/9999"); 
+	$("#celular").mask("(99) 9999-9999");
+});
+</script>
+<body>
+	<div>
+		<h2> Tratamento dos campos com expressões regulares: </h2> <!-- Formulario dos campos -->
+	</div>
+	<form role="form" action="index.php" method="POST" >
+		<div class="form-group">
+			<label> Nome:</label> <div><input class="form-control" type="text" name="nome" placeholder="Informe nome..." title="Deve aceitar apenas letras e iniciar sempre com letra maiúscula."  /></div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label> CPF: </label> 
+			<div>
+				<input class="form-control"  type="text" name="cpf" placeholder="Informe CPF..." title="Deve aceitar apenas dígitos e precisa ser definido o formato com ponto e hífen; deve ser também verificado se é um CPF válido ou não." />
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label> RG:</label> 
+			<div>
+				<input class="form-control" type="text" name="rg" id="rg" placeholder="Informe RG..." title="Deve iniciar sempre por dígitos, mas deve permitir letras e dígitos." />
+			</div>
+		</div>
+		<br>
+		<div class="form-group" >
+			<label> Endereço: </label>
+			<div>
+				<input class="form-control" type="text" name="endereco" placeholder="Informe endereço..." title="i. Rua – Deve aceitar apenas letras. ii. Número – Deve iniciar por dígito, mas pode aceitar letra. iii. Complemento – Deve aceitar letras e dígitos."/>
+			</div>
+		</div>
+		<br>
+		<div class="form-group" >
+			<label> Celular: </label>
+			<div>
+				<input class="form-control" type="text" name="celular" id="celular" placeholder="Informe celuar..." title="Deve manter o seguinte formato: (DD) DDDD – DDDD; os caracteres () e – não devem ser preenchidos pelo usuário." />
+			</div>
+		</div>
+		<br>
+		<div class="form-group" >
+			<label> Data: </label>
+			<div>
+				<input class="form-control" type="text" name="data" id="date" placeholder="Informe data do preenchimento..." title=" Deve manter o seguinte formato: DD / DD / DDDD; o caractere / não deve ser preenchido pelo usuário; a data precisa ser válida e não deve permitir data superior a data atual."/>
+			</div>
+		</div>
+		<br>
+		<div>
+			<button class="btn btn-primary" type="submit">
+				Enviar
+				<span class="glyphicon glyphicon-arrow-right"></span>
+			</button>
+		</div>
+	</form>
+</body>
+</html>
+
