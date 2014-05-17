@@ -1,7 +1,6 @@
 
 REFERENCIAS:
-
-===========================================
+============
 
 http://www.phpit.com.br/artigos/entendendo-as-expressoes-regulares.phpit
 
