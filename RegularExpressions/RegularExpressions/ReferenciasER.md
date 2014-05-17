@@ -1,5 +1,5 @@
 
-REFERENCIAS:
+REFERENCIAS
 ============
 
 http://www.phpit.com.br/artigos/entendendo-as-expressoes-regulares.phpit
@@ -12,4 +12,4 @@ http://www.ibm.com/developerworks/br/library/os-php-regex1/
 
 http://www.devmedia.com.br/expressoes-regulares-em-php/25076
 
-http://www.guimadaleno.com/blog-php-oito-expressoes-regulares-uteis-post.html
+http://www.guimadaleno.com/blog-php-oito-expressoes-regulares-uteis-post.html 
