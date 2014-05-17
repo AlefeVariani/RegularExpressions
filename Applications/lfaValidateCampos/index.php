@@ -13,7 +13,7 @@
 <tr><td>1</td><td>Nome</td>
 	<td><?php
 		$nome = $_POST["nome"];
-		if (!$nome) { ?>
+		if (empty($nome)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php 
 		} else {
 			if (preg_match('/^[A-Z]{1,}[a-z][^\d]{1,}$/', $nome)) { ?>
@@ -27,7 +27,7 @@
 <tr><td>2</td><td>CPF</td>
 	<td><?php
 		$cpf = $_POST["cpf"];
-		if (!$cpf) { ?>
+		if (empty($cpf)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php
 		} else {
 			if (preg_match('/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/', $cpf)) { ?>
@@ -41,7 +41,7 @@
 <tr><td>3</td><td>RG</td>
 	<td><?php
 		$rg = $_POST["rg"];
-		if (!$rg) { ?>
+		if (empty($rg)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php
 		} else {
 			if (preg_match('/^[0-9]{1}[0-9a-z]{8}$/', $rg)) { ?>
@@ -55,7 +55,7 @@
 <tr><td>4</td><td>Endereço</td>
 	<td><?php
 		$endereco = $_POST["endereco"];
-		if (!$endereco) { ?>
+		if (empty($endereco)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php
 		} else {
 			if (preg_match('/^[a-zA-Z ]{1,}\ [0-9]{1,}\ [0-9a-zA-Z ]{1,}/', $endereco)) { ?>
@@ -69,7 +69,7 @@
 <tr><td>5</td><td>Celular</td>
 	<td><?php
 		$celular = $_POST["celular"];
-		if (!$celular) { ?>
+		if (empty($celular)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php
 		} else {
 			if (preg_match('/^\([0-9]{2}\)\ [0-9]{4}\-[0-9]{4}$/', $celular)) { ?>
@@ -83,7 +83,7 @@
 <tr><td>6</td><td>Data</td>
 	<td><?php 
 		$data = $_POST["data"];
-		if (!$data) { ?>
+		if (empty($data)) { ?>
 			<td class="active"> <?php echo "Campo não informado";?></td><?php
 		} else {
 			$dataAtual = date('d/m/Y');
