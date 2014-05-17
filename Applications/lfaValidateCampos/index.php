@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<title>LFA</title>
-
 </head>
 <body>
 	<div>
