@@ -13,8 +13,8 @@ Applications/
 - Aplicações feitas com expressões regulares
 
 
-RegularExpressions
-------------------
+RegularExpressions/
+-------------------
 
 - Conceitos
 - Exemplos
