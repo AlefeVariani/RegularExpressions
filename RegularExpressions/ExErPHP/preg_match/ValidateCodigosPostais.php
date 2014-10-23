@@ -14,8 +14,7 @@
 
 $string = "55325-4324";
 
-if (preg_match('/^[0-9]{5,5}([- ]?[0-9]{4,4})?$/', $string)) 
-{
+if (preg_match('/^[0-9]{5,5}([- ]?[0-9]{4,4})?$/', $string)) {
 	echo "Códigos Postais Válido";    
 } else {
 	echo "Códigos Postais Inválido";

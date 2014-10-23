@@ -18,8 +18,7 @@ $string = "alefevariani@unochapeco.edu.br";
 
 if 
 (preg_match('/^[^0-9][a-zA-Z0-9_-]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/',
-$string))
-{
+$string)) {
     echo "E-mail Válido";
 } else {
 	echo "E-mail Inválido";

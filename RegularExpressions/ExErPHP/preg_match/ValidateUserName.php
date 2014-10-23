@@ -12,8 +12,7 @@
 
 $string = "alefe_123";
 
-if (preg_match('/^[a-z\d_-]{4,28}$/i', $string)) 
-{
+if (preg_match('/^[a-z\d_-]{4,28}$/i', $string)) {
 	echo "NameUser Válido!";
 } else {
 	echo "NameUser Inválido!";

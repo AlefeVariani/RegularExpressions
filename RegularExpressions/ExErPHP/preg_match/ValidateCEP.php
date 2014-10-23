@@ -14,7 +14,7 @@
 $er = "/^(\d){4}[- ]?(\d){3}$/";
 $string = "888 400";
 
-if(preg_match($er, $string)){
+if (preg_match($er, $string)) {
 	echo "CEP Válido";
 } else {
 	echo "CEP Inválido";

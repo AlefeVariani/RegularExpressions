@@ -19,8 +19,7 @@
 
 $string = "10/10/2013";
 
-if (preg_match('/^([0-32]){1,2}\/([0-12]){1,2}\/\d{4}$/', $string))
-{
+if (preg_match('/^([0-32]){1,2}\/([0-12]){1,2}\/\d{4}$/', $string)) {
 	echo "Data Válida";
 } else {
 	echo "Data Inválida";
